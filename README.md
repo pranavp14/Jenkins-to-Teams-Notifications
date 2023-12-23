@@ -6,14 +6,24 @@ Automating Jenkins to update build results in a customized format on Teams foste
 
 This Python and Robot Framework automation project brings together the power of Jenkins and Microsoft Teams seamlessly. The project's core revolves around establishing a robust connection between Jenkins and Teams, enhancing communication and transparency across the Continuous Integration and Continuous Deployment pipelines. A structured result template has been meticulously crafted by parsing the build XML file, enabling the smooth transmission of essential updates through a webhook directly into Microsoft Teams. This integration orchestrates real-time notifications, ensuring that teams stay in the loop with instant updates delivered straight to their collaborative workspace. By streamlining these updates, the project optimizes team communication, fostering efficiency, and a deeper level of transparency throughout the development lifecycle
 
+## Technologies Used:
+ - Python
+ - Robot Framework
+ - xml.etree.ElementTree library
+ - RequestLibrary
+ - Jenkins
+ - HTML/CSS
+ - Microsoft Teams.
+   
 ## Steps Performed:
 
- - Write teams notification python code and integrate with robot framework for automation.
- - Generate webhook for perticular channel for build updates.
  - Create an EC2 Instance + Jenkins
+ - Write teams notification python code and integrate with robot framework for automation and
+ - Generate Incoming webhook for perticular Microsoft teams channel for build updates.
+ - Parsing XML using xml.etree.ElementTree and making HTTP requests with requests.
  - Push Code on Github account.
  - Create a Jenkins pipeline for k8s cluster commission and decommission.
- - Get update Jenkins build to Teams channel such as 'post' section allows you to define actions that should be taken after a pipeline stage or the entire pipeline completes execution.
+ - Get update Jenkins build to specific Microsoft Teams channel such as 'post' section allows you to define actions that should be taken after a pipeline stage or the entire pipeline completes execution.
 
 ## Screenshots:
 
